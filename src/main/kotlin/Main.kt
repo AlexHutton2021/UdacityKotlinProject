@@ -101,10 +101,6 @@ fun main(args: Array<String>) {
     //for (i in 10 downTo(1).step(2))
     //print("$i")
 
-    //for(num 1..10000)
-    //if(num==9001){
-    //print("Its over 9000")
-    // }
 
     //for(num in 200 downTo(1))
     //if(num==10) {
@@ -228,7 +224,7 @@ fun main(args: Array<String>) {
     //} while (x == 100)
     //("Hey presto magic number is 100")
 
-    // 4loops are generally used to iterate through ranges
+    // 4loops are generally used to iterate through ranges, arrays collections set of values that are stored in a construct
 
     //var felttemp = "cold"
     //var roomtemp = 0
@@ -240,7 +236,19 @@ fun main(args: Array<String>) {
     //}
     //}
 
+    //for (num in 1..10){
+    //print("$num")
+    //}
 
+    //for (i in 1 until 10){
+    //print($"i ")
+    //}
+
+    //for (i in 10 downTo 1 step 2 ){
+      //print("$i")
+    //}
+
+    //Exercise
 
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
