@@ -145,22 +145,6 @@ fun main(args: Array<String>) {
     //else -> println("Ok fish name")
     //}
 
-    //Arrays and loops
-    //if val variable value is a reference then you cannot assign it a different reference later
-    //however if you are referencing something thats not immutable it can still change it only applies to the reference
-
-    //val myList = MutableListOf("carrot", "apple", "banana")
-    //val myList = MutableListOf("carrot", "apple", "banana")
-    //myList.remove("apple")
-
-    //loops and Arrays
-    //val school = arrayListOf<>("Children", "thought", "fish")
-    //var fish = 12
-    //var plants = 25
-    //val swarm = listOf<>(fish, plants)
-    //val numbers = intArrayOf(1,2,3)
-    //val mix = arrayListOf<>("fish", 2)
-    //println(Arrays.toString(mix))
 
     //cool features of arrays in kotlin is the ability to initialise them with dynamic code
     //val array = Array(5) { it * 2 }
@@ -248,9 +232,116 @@ fun main(args: Array<String>) {
       //print("$i")
     //}
 
+    //Arrays and loops
+    //if val variable value is a reference then you cannot assign it a different reference later
+    //however if you are referencing something thats not immutable it can still change it only applies to the reference
+
+    //val myList = MutableListOf("carrot", "apple", "banana")
+    //val myList = MutableListOf("carrot", "apple", "banana")
+    //myList.remove("apple")
+
+    //loops and Arrays
+    //val school = arrayListOf<>("Children", "thought", "fish")
+    //var fish = 12
+    //var plants = 25
+    //val swarm = listOf<>(fish, plants)
+    //val numbers = intArrayOf(1,2,3)
+    //val mix = arrayListOf<>("fish", 2)
+    //println(Arrays.toString(mix))
+
+    // collections are simply a group of the same type of data or a different type of data
+    // in Kotlin there are two categories of collections classes taht than only hold one type of element or bpth one type and different type of element
+    //collections of only the same element
+    //IntArray - Integer
+    //BooleanArray - Boolean
+    //DoubleArray - Double
+    //ByteArray - Byte
+    //LongArray - Long
+    //FloatArray - Float
+
+    //immutable collections can only read the values but cannot write to it
+    //List - listOf //is similar to array of but with more helper methods for performing operations on its values and can be increased when neeeded
+    //set - setOf   //is a class that ensures there are no duplicate values in a group
+    //Map - mapOf //mapOf is afranged as a key value pair where each value has a key in which to identify it
+
+    //Mutable collections
+    //Mutable list - ArrayList, arrayListOf, mutableListOf
+    //Mutable Set - mutableSetOf, hashSetOf
+    //Mutable Map - HashMap, hashMapOf, mutableMapOf
+
+    //val numbers:IntArray = intArrayOf(1,2,3,4,5,6)
+    //val numbers = intArrayOf(1,2,3,4,5,6)
+    //val numbers = arrayOf(1,2,3,4,5,6)
+    //print(numbers.contentToString()) //will need to use a utility method provided by kotlin for that purpose
+    //for (element in numbers) {
+        //print("initial values ${numbers.contentToString()}")
+        //print(element)                   //will just print 1,2,3,4,5,6
+        //print(" ${element+2}")       //will print the summation of the array plus 2
+        //print(numbers[4])              //print the 1st number 0=1, 1=2 2=3 etc
+        //numbers[0] = 6                     //If an number that is not refernced is used we will get an index out of bound exception
+        //numbers[1] = 5
+        //numbers[4] = 2
+        //numbers[5] = 1
+        //print("\n New values ${numbers.contentToString()}")
+    //}
+
+        //val numbers = doubleArrayOf(1.0,2.0,3.0,4.0,5.0,6.0)
+        //for (element in numbers) {
+            //print("initial values ${numbers.contentToString()}")
+            //numbers[0] = 6.0
+            //numbers[1] = 5.0
+            //numbers[4] = 2.0
+            //numbers[5] = 1.0
+            //print("\n New values ${numbers.contentToString()}")
+        //}
+            //val days = arrayOf("sun", "mon", "tue", "wed", "thu", "fri", "sat")
+            //print(days.contentToString())
+
+            //val months = arrayOf("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
+            //print(months.contentToString())
+
+            //val fruits = arrayOf(Fruit("Apple", 2.5), (Fruit ( "Banana", 0.5 ))
+                //for (fruit in fruits) {
+                    //print(" ${fruit.name}")
+                //}
+            //print(fruits.contentToString()))
+            //for (index in fruits.indicies){
+                    //print("${fruits[index].name} is in index $index")
+            //}
+
+            //val mix = arrayOf("jan", "feb", "mar", "apr", "may", 0, 2.0, 3.0, 4.0 ,5.0, (Fruit ( "Banana", 0.5 )))
+            //print(mix.contentToString())
+
+            //lists can be used to list a group of values
+            //val months = listOf("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
+            //val anyTypes = listOf(1, 2, 3, true, false, "string")
+            //print(anyTypes.size)   //this will print the number of values in the list in this case 6
+            //print(months[0])       //This will print the 1st month listed
+            //for (month in months){
+                //println(month)       //This will also print all the months
+           // }
+            //val additionalMonths = months.toMutableList() //in order to make a list that mutable we can convert our existing list to a mutable list and then add items
+            //val newMonths = arrayOf("april", "may", "june")
+            //additionalMonths.addAll(newMonths)
+            //additionalMonths.add("june")
+            //print(additionalMonths)                //print months + newMonths using addAll method
+            //print(additionalMonths)                // print months + june
+
+            val days = mutableListOf("mon", "tue", "wed","thur", "fri", "sat")
+            days.add("sun")
+            print(days)
+
+            val appFunction = mutableListOf("login", "search", "addTocart", "checkout")
+            appFunction.add("logout")
+            print(appFunction)
+
+
+}
+
+
+//data class Fruit(val name: String, val price:Double)
     //Exercise
 
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
-}
+    //println("Program arguments: ${args.joinToString()}")
