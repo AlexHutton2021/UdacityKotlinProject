@@ -1,4 +1,5 @@
 import java.util.*
+import kotlin.collections.ArrayList
 
 fun main(args: Array<String>) {
     //println("Alex!")
@@ -327,20 +328,83 @@ fun main(args: Array<String>) {
             //print(additionalMonths)                //print months + newMonths using addAll method
             //print(additionalMonths)                // print months + june
 
-            val days = mutableListOf("mon", "tue", "wed","thur", "fri", "sat")
-            days.add("sun")
-            print(days)
+            //val days = mutableListOf("mon", "tue", "wed","thur", "fri", "sat")
+            //days.add("sun")
+            //print(days)
 
-            val appFunction = mutableListOf("login", "search", "addTocart", "checkout")
-            appFunction.add("logout")
-            print(appFunction)
+            //val appFunction = mutableListOf("login", "search", "addTocart", "checkout")
+            //appFunction.add("logout")
+            //print(appFunction)
+
+            //val rainbbow = mutableListOf("red", "yellow", "pink", "blue", "purple", "orange")
+            //rainbbow.add("violet")
+            //rainbbow[0] = "green"
+            //rainbbow.removeAt(index = 1)      //rainbbow.removeAll will remove the whole list
+            //print(rainbbow)
+
+            //sets and maps
+            //val fruits = setOf("guava", "jackfruit", "dragonfruit", "passionfruit", "mango", "grape", "guava" )
+            //print(fruits.size)     //gives you the total number of unique fruits
+            //print(fruits.toSortedSet())   //order alphabetically without duplicates
+
+            //val newFruits = fruits.toMutableList()
+            //newFruits.add("pear")
+            //newFruits.add("peach")
+            //newFruits.add("plum")
+            //newFruits.add("pomegranet")
+            //print(newFruits.elementAt(index = 3))  //reference passionfruit from this list [guava, jackfruit, dragonfruit, passionfruit, mango, grape, pear, peach, plum, pomegranet]
+
+            //maps
+            //val daysOfTheWeek = mapOf(1 to "Monday", 2 to "Tuesday", 3 to "Wednesday", 4 to "Thursday", 5 to "Friday", 6 to "Saturday", 7 to "Sunday")   // each key can only exist once also known as hashmaps {referring to the key values}
+            //print(daysOfTheWeek[2])    //result would be to print Tuesday
+            //for(key in daysOfTheWeek.keys)
+                //print("$key is to ${daysOfTheWeek[key]}")   //result will print tuesday
+            //val newDaysOfTheWeek = daysOfTheWeek.toMutableMap()
+            //newDaysOfTheWeek[1] = "Sunday"
+            //newDaysOfTheWeek[2] = "Monday"
+            //newDaysOfTheWeek[3] = "Tuesday"
+            //newDaysOfTheWeek[4] = "Wednesday"
+            //newDaysOfTheWeek[5] = "Thursday"
+            //newDaysOfTheWeek[6] = "Friday"
+            //newDaysOfTheWeek[7] = "Saturday"
+            //print(newDaysOfTheWeek.toSortedMap())
 
 
+            val fruitsMap = mapOf("favourite" to Fruit(name = "grape", price = 1.0), "ok" to Fruit(name = "Apple", price = 1.5), "2nd Favourite" to Fruit(name = "peach", price = 2.0))
+            //print(fruitsMap)
+            val newFruitsMap = fruitsMap.toMutableMap()
+            newFruitsMap[1.toString()] = ("New favourite" to Fruit(name = "Plum", price = 4.0))
+            newFruitsMap[2.toString()] = ("It'll do" to Fruit(name = "pumpkin", price = 5.5))
+            newFruitsMap[3.toString()] = ("2nd Favourite" to Fruit(name = "pear", price = 2.0))
+
+            //Arraylist are used to create a dynamic array.
+            //Which means the size of an ArrayList can be increased or decreased according to the requirement
+            //The ArrayList class provides both read and write functionalities
+            //The ArrayList follows the sequence of assertion order
+            //An ArrayList is non synchronised and it may contain duplicate elements
+            //ArrayList<E>(): Is used to create an empty array list
+            //ArrayList(capacity: Int) is used to create an ArrayList of specified capacity
+            //ArrayList(elements: Collection<E>) Is used to create an ArrayList filled with the elements of a collection
+
+            //Empty ArrayList
+            //val arrayList = ArrayList<String>()
+            //arrayList.add("one")
+            //arrayList.add("two")
+            //println("print ArrayList")
+            //for (i in arrayList) {
+                //println(i)
+            //}
+
+
+
+
+
+            //Exercise
 }
 
 
-//data class Fruit(val name: String, val price:Double)
-    //Exercise
+            data class Fruit(val name: String, val price:Double)
+            //Exercise
 
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
