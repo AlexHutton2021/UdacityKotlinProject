@@ -4,6 +4,116 @@ import kotlin.collections.ArrayList
 fun main(args: Array<String>) {
     //println("Alex!")
 
+    //operators
+
+    //val NumberOfFish = 60
+    //val NumberOfPotatoes = 10
+    //if (NumberOfFish > NumberOfPotatoes)
+    //println("Good ratio")
+    //else println("bad ratio")
+
+    //fun = function main = entry point for application note the green arrow next to it
+    //val MyName = "Alex" // variable my name which has a stored value Alex type string
+    //var age = 31 // type int
+    // TODO: ADD NEW NEW FUNCTIONALITY AROUND LOGIN FEATURE
+    //print("Hello" + MyName) // reusing the MyName variable in the print statement
+
+    //Integer Types: Byte (8 bit), short  (16bit),
+    //Int  (32 bit), Long (64 bit)
+    //val myByte: Byte = 12
+    //val myShort: Short = 25
+    //val myInt: Int = 123232123
+    //val myLong: Long = 39_767_356_767_876_546
+
+    //Floating pint number types: Float (32 bit), Double (64bit)
+    //val myFloat: Float = 13.37F // Assigning an F is explicitly stating it is a float
+    //val myDouble: Double = 3.146787865676556097634
+
+    //Boolean is used o represent logical values
+    //Cant have two possible values true and false
+    //var isSunny: Boolean = true
+    //isSunny = false // sun is no longer shinning
+
+    //Characters
+    //val letterChar = 'A'
+    //val digitChar = '$'
+
+    //strings
+    //val myStr = "Hello World"
+    //var firstCharIntStr = myStr[0] //First cahracter of Hello world
+    //var lastCharIntString = myStr[myStr.length -1] // last character of Hello World
+
+    //print("First Character$firstCharIntStr")
+
+    /* Exerice
+    1. val CourseName = "Android Masterclass"
+    2. val myFloat: Float = 16.34F
+    3. val Pi: Double = 3.146787865676556097634
+    4. var age: Short = 85
+    5. val year: short = 2022
+    6. var Phonenumber: Long = 0469248686
+    7. var isHot: Boolean = true
+    8. val firstCharacter: Char = 'a'
+     */
+
+    //Arithmatic operators (+, -, /, *, %)
+    //var result = 5+3
+    //result = 15%2  //modular is the reminder 15/2 = 7 carry 1
+    //print(result)
+
+    //var result = 5+3
+    //val a = 5.0
+    //val b = 3
+    //var resultDouble: Double
+    //resultDouble = a / b
+    //print(resultDouble)
+
+    //comparison operators (==, !=, <, >, <=, >=)
+    //val isEqual = 5==3 // == checks the the value on the left hand side = the value on the right hand side you will get a true false result
+    //print("is equal is" + isEqual)
+
+    //val isNotEqual = 5!=5 // != checks is equal to
+    //print("isNotEqual$isNotEqual")
+
+    //println("is5greater3 ${5>3}")
+    //println("is5lessthan3 ${5<3}")
+    //println("is5lessthanequalto3 ${5<=3}")
+    //println("is3morethanorequalto5 ${3>=5}")
+
+    //Assignment operators (+=, -=, *=, /=, %=)
+    //var myNum = 10
+    //myNum += 5
+    //println("myNum is $myNum")
+
+    //var myNum = 100
+    //myNum -= 100
+    //println("myNum is $myNum")
+
+    //var myNum = 1000
+    //myNum *= 2
+    //println("myNum is $myNum")
+
+    //var myNum = 1000
+    //myNum /= 100
+    //myNum += 5
+    //myNum *= 3
+    //println("myNum is $myNum")
+
+    //Increment and decrement operators ( ++, -- )
+    //myNum++
+    //println("myNum is $myNum")
+    //myNum--
+    //println("myNum is $myNum")
+    //print("myNum is ${myNum++}")
+    //println("myNum is ${++myNum}")
+
+
+
+
+
+
+
+
     //Data type called a string, which is used for data values that are made up of ordered sequences of characters
     // "Hello"
     //String can be concatonated using the "+" sign
@@ -21,6 +131,9 @@ fun main(args: Array<String>) {
     //plant == fish
     //fish == fish
     //fish != plant
+
+
+    //operators
 
     //val NumberOfFish = 60
     //val NumberOfPotatoes = 10
@@ -370,12 +483,12 @@ fun main(args: Array<String>) {
             //print(newDaysOfTheWeek.toSortedMap())
 
 
-            val fruitsMap = mapOf("favourite" to Fruit(name = "grape", price = 1.0), "ok" to Fruit(name = "Apple", price = 1.5), "2nd Favourite" to Fruit(name = "peach", price = 2.0))
+            //val fruitsMap = mapOf("favourite" to Fruit(name = "grape", price = 1.0), "ok" to Fruit(name = "Apple", price = 1.5), "2nd Favourite" to Fruit(name = "peach", price = 2.0))
             //print(fruitsMap)
-            val newFruitsMap = fruitsMap.toMutableMap()
-            newFruitsMap[1.toString()] = ("New favourite" to Fruit(name = "Plum", price = 4.0))
-            newFruitsMap[2.toString()] = ("It'll do" to Fruit(name = "pumpkin", price = 5.5))
-            newFruitsMap[3.toString()] = ("2nd Favourite" to Fruit(name = "pear", price = 2.0))
+            //val newFruitsMap = fruitsMap.toMutableMap()
+            //newFruitsMap[1.toString()] = ("New favourite" to Fruit(name = "Plum", price = 4.0))
+            //newFruitsMap[2.toString()] = ("It'll do" to Fruit(name = "pumpkin", price = 5.5))
+            //newFruitsMap[3.toString()] = ("2nd Favourite" to Fruit(name = "pear", price = 2.0))
 
             //Arraylist are used to create a dynamic array.
             //Which means the size of an ArrayList can be increased or decreased according to the requirement
