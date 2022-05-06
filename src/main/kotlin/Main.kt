@@ -2,31 +2,6 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 fun main(args: Array<String>) {
-    //println("Alex!")
-
-    //Data type called a string, which is used for data values that are made up of ordered sequences of characters
-    // "Hello"
-    //String can be concatonated using the "+" sign
-    //println("Hello + Alex")
-    //You can also use string templates to build strings by combining them with values
-    //val NumberOfFish = 5
-    // NumberOfPotatoes = 10
-    //println("I have $NumberOfFish fish and I have $NumberOfPotatoes potatoes") //the dollar variable name is replaced by text representing its value
-
-    // You can also use operators with strings
-    //println("I have ${NumberOfFish + NumberOfPotatoes} Fish and Potatoes")
-    //== is a by value comparison sign //!= not equal to
-    //val fish = "fish"
-    //val plant = "plant"
-    //plant == fish
-    //fish == fish
-    //fish != plant
-
-    //val NumberOfFish = 60
-    //val NumberOfPotatoes = 10
-    //if (NumberOfFish > NumberOfPotatoes)
-        //println("Good ratio")
-    //else println("bad ratio")
 
     //more If else statements
 
@@ -65,7 +40,7 @@ fun main(args: Array<String>) {
     //ranges
     //val M1 = 2500
     //if (M1 in 2000..3000)
-        //println("M1")
+    //println("M1")
 
     //ranges using if, else if
     //val M1 = 9500
@@ -82,18 +57,18 @@ fun main(args: Array<String>) {
     //ranges using when statement
     //val NumberofFish = 50
     //when (NumberofFish) {
-        //0 -> println("Empty Tank")
-        //50 -> println("Full tank")
-        //else -> println("Not relevant")
+    //0 -> println("Empty Tank")
+    //50 -> println("Full tank")
+    //else -> println("Not relevant")
     //}
 
     //ranges using letters
     //for (i in 'b'..'g')
-        //println(i)
+    //println(i)
 
     //ranges advancing in multiple steps
     //for (i in 3..6 step 2)
-        //println(i)  // print the every 2nd number from range 3, 4, 5 6 ie 3,5
+    //println(i)  // print the every 2nd number from range 3, 4, 5 6 ie 3,5
 
     //for (i in 1 until 10){
     //print("$i")
@@ -110,7 +85,7 @@ fun main(args: Array<String>) {
 
     //ranges for number going downwards
     //for (i in 5 downTo 1)
-        //println(i)
+    //println(i)
 
     //var age = 18
     //when(age){
@@ -161,7 +136,7 @@ fun main(args: Array<String>) {
     //while loops executes a block of code repeatedly as long as a given condition is true
     //val x = 1
     //while (x <= 10) {
-        //println("$x") //this will print 1 continously becuase 1 is less than 10
+    //println("$x") //this will print 1 continously becuase 1 is less than 10
     //}
 
     //var x = 1
@@ -184,7 +159,7 @@ fun main(args: Array<String>) {
     //println("$x")
     //x+=1
     //}
-   // print("\n This loop has met its condition")
+    // print("\n This loop has met its condition")
 
     //var x = 5000
     //while (x <= 5000) {
@@ -230,7 +205,7 @@ fun main(args: Array<String>) {
     //}
 
     //for (i in 10 downTo 1 step 2 ){
-      //print("$i")
+    //print("$i")
     //}
 
     //Arrays and loops
@@ -275,137 +250,138 @@ fun main(args: Array<String>) {
     //val numbers = arrayOf(1,2,3,4,5,6)
     //print(numbers.contentToString()) //will need to use a utility method provided by kotlin for that purpose
     //for (element in numbers) {
-        //print("initial values ${numbers.contentToString()}")
-        //print(element)                   //will just print 1,2,3,4,5,6
-        //print(" ${element+2}")       //will print the summation of the array plus 2
-        //print(numbers[4])              //print the 1st number 0=1, 1=2 2=3 etc
-        //numbers[0] = 6                     //If an number that is not refernced is used we will get an index out of bound exception
-        //numbers[1] = 5
-        //numbers[4] = 2
-        //numbers[5] = 1
-        //print("\n New values ${numbers.contentToString()}")
+    //print("initial values ${numbers.contentToString()}")
+    //print(element)                   //will just print 1,2,3,4,5,6
+    //print(" ${element+2}")       //will print the summation of the array plus 2
+    //print(numbers[4])              //print the 1st number 0=1, 1=2 2=3 etc
+    //numbers[0] = 6                     //If an number that is not refernced is used we will get an index out of bound exception
+    //numbers[1] = 5
+    //numbers[4] = 2
+    //numbers[5] = 1
+    //print("\n New values ${numbers.contentToString()}")
     //}
 
-        //val numbers = doubleArrayOf(1.0,2.0,3.0,4.0,5.0,6.0)
-        //for (element in numbers) {
-            //print("initial values ${numbers.contentToString()}")
-            //numbers[0] = 6.0
-            //numbers[1] = 5.0
-            //numbers[4] = 2.0
-            //numbers[5] = 1.0
-            //print("\n New values ${numbers.contentToString()}")
-        //}
-            //val days = arrayOf("sun", "mon", "tue", "wed", "thu", "fri", "sat")
-            //print(days.contentToString())
+    //val numbers = doubleArrayOf(1.0,2.0,3.0,4.0,5.0,6.0)
+    //for (element in numbers) {
+    //print("initial values ${numbers.contentToString()}")
+    //numbers[0] = 6.0
+    //numbers[1] = 5.0
+    //numbers[4] = 2.0
+    //numbers[5] = 1.0
+    //print("\n New values ${numbers.contentToString()}")
+    //}
+    //val days = arrayOf("sun", "mon", "tue", "wed", "thu", "fri", "sat")
+    //print(days.contentToString())
 
-            //val months = arrayOf("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
-            //print(months.contentToString())
+    //val months = arrayOf("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
+    //print(months.contentToString())
 
-            //val fruits = arrayOf(Fruit("Apple", 2.5), (Fruit ( "Banana", 0.5 ))
-                //for (fruit in fruits) {
-                    //print(" ${fruit.name}")
-                //}
-            //print(fruits.contentToString()))
-            //for (index in fruits.indicies){
-                    //print("${fruits[index].name} is in index $index")
-            //}
+    //val fruits = arrayOf(Fruit("Apple", 2.5), (Fruit ( "Banana", 0.5 ))
+    //for (fruit in fruits) {
+    //print(" ${fruit.name}")
+    //}
+    //print(fruits.contentToString()))
+    //for (index in fruits.indicies){
+    //print("${fruits[index].name} is in index $index")
+    //}
 
-            //val mix = arrayOf("jan", "feb", "mar", "apr", "may", 0, 2.0, 3.0, 4.0 ,5.0, (Fruit ( "Banana", 0.5 )))
-            //print(mix.contentToString())
+    //val mix = arrayOf("jan", "feb", "mar", "apr", "may", 0, 2.0, 3.0, 4.0 ,5.0, (Fruit ( "Banana", 0.5 )))
+    //print(mix.contentToString())
 
-            //lists can be used to list a group of values
-            //val months = listOf("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
-            //val anyTypes = listOf(1, 2, 3, true, false, "string")
-            //print(anyTypes.size)   //this will print the number of values in the list in this case 6
-            //print(months[0])       //This will print the 1st month listed
-            //for (month in months){
-                //println(month)       //This will also print all the months
-           // }
-            //val additionalMonths = months.toMutableList() //in order to make a list that mutable we can convert our existing list to a mutable list and then add items
-            //val newMonths = arrayOf("april", "may", "june")
-            //additionalMonths.addAll(newMonths)
-            //additionalMonths.add("june")
-            //print(additionalMonths)                //print months + newMonths using addAll method
-            //print(additionalMonths)                // print months + june
+    //lists can be used to list a group of values
+    //val months = listOf("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec")
+    //val anyTypes = listOf(1, 2, 3, true, false, "string")
+    //print(anyTypes.size)   //this will print the number of values in the list in this case 6
+    //print(months[0])       //This will print the 1st month listed
+    //for (month in months){
+    //println(month)       //This will also print all the months
+    // }
+    //val additionalMonths = months.toMutableList() //in order to make a list that mutable we can convert our existing list to a mutable list and then add items
+    //val newMonths = arrayOf("april", "may", "june")
+    //additionalMonths.addAll(newMonths)
+    //additionalMonths.add("june")
+    //print(additionalMonths)                //print months + newMonths using addAll method
+    //print(additionalMonths)                // print months + june
 
-            //val days = mutableListOf("mon", "tue", "wed","thur", "fri", "sat")
-            //days.add("sun")
-            //print(days)
+    //val days = mutableListOf("mon", "tue", "wed","thur", "fri", "sat")
+    //days.add("sun")
+    //print(days)
 
-            //val appFunction = mutableListOf("login", "search", "addTocart", "checkout")
-            //appFunction.add("logout")
-            //print(appFunction)
+    //val appFunction = mutableListOf("login", "search", "addTocart", "checkout")
+    //appFunction.add("logout")
+    //print(appFunction)
 
-            //val rainbbow = mutableListOf("red", "yellow", "pink", "blue", "purple", "orange")
-            //rainbbow.add("violet")
-            //rainbbow[0] = "green"
-            //rainbbow.removeAt(index = 1)      //rainbbow.removeAll will remove the whole list
-            //print(rainbbow)
+    //val rainbbow = mutableListOf("red", "yellow", "pink", "blue", "purple", "orange")
+    //rainbbow.add("violet")
+    //rainbbow[0] = "green"
+    //rainbbow.removeAt(index = 1)      //rainbbow.removeAll will remove the whole list
+    //print(rainbbow)
 
-            //sets and maps
-            //val fruits = setOf("guava", "jackfruit", "dragonfruit", "passionfruit", "mango", "grape", "guava" )
-            //print(fruits.size)     //gives you the total number of unique fruits
-            //print(fruits.toSortedSet())   //order alphabetically without duplicates
+    //sets and maps
+    //val fruits = setOf("guava", "jackfruit", "dragonfruit", "passionfruit", "mango", "grape", "guava" )
+    //print(fruits.size)     //gives you the total number of unique fruits
+    //print(fruits.toSortedSet())   //order alphabetically without duplicates
 
-            //val newFruits = fruits.toMutableList()
-            //newFruits.add("pear")
-            //newFruits.add("peach")
-            //newFruits.add("plum")
-            //newFruits.add("pomegranet")
-            //print(newFruits.elementAt(index = 3))  //reference passionfruit from this list [guava, jackfruit, dragonfruit, passionfruit, mango, grape, pear, peach, plum, pomegranet]
+    //val newFruits = fruits.toMutableList()
+    //newFruits.add("pear")
+    //newFruits.add("peach")
+    //newFruits.add("plum")
+    //newFruits.add("pomegranet")
+    //print(newFruits.elementAt(index = 3))  //reference passionfruit from this list [guava, jackfruit, dragonfruit, passionfruit, mango, grape, pear, peach, plum, pomegranet]
 
-            //maps
-            //val daysOfTheWeek = mapOf(1 to "Monday", 2 to "Tuesday", 3 to "Wednesday", 4 to "Thursday", 5 to "Friday", 6 to "Saturday", 7 to "Sunday")   // each key can only exist once also known as hashmaps {referring to the key values}
-            //print(daysOfTheWeek[2])    //result would be to print Tuesday
-            //for(key in daysOfTheWeek.keys)
-                //print("$key is to ${daysOfTheWeek[key]}")   //result will print tuesday
-            //val newDaysOfTheWeek = daysOfTheWeek.toMutableMap()
-            //newDaysOfTheWeek[1] = "Sunday"
-            //newDaysOfTheWeek[2] = "Monday"
-            //newDaysOfTheWeek[3] = "Tuesday"
-            //newDaysOfTheWeek[4] = "Wednesday"
-            //newDaysOfTheWeek[5] = "Thursday"
-            //newDaysOfTheWeek[6] = "Friday"
-            //newDaysOfTheWeek[7] = "Saturday"
-            //print(newDaysOfTheWeek.toSortedMap())
-
-
-            val fruitsMap = mapOf("favourite" to Fruit(name = "grape", price = 1.0), "ok" to Fruit(name = "Apple", price = 1.5), "2nd Favourite" to Fruit(name = "peach", price = 2.0))
-            //print(fruitsMap)
-            val newFruitsMap = fruitsMap.toMutableMap()
-            newFruitsMap[1.toString()] = ("New favourite" to Fruit(name = "Plum", price = 4.0))
-            newFruitsMap[2.toString()] = ("It'll do" to Fruit(name = "pumpkin", price = 5.5))
-            newFruitsMap[3.toString()] = ("2nd Favourite" to Fruit(name = "pear", price = 2.0))
-
-            //Arraylist are used to create a dynamic array.
-            //Which means the size of an ArrayList can be increased or decreased according to the requirement
-            //The ArrayList class provides both read and write functionalities
-            //The ArrayList follows the sequence of assertion order
-            //An ArrayList is non synchronised and it may contain duplicate elements
-            //ArrayList<E>(): Is used to create an empty array list
-            //ArrayList(capacity: Int) is used to create an ArrayList of specified capacity
-            //ArrayList(elements: Collection<E>) Is used to create an ArrayList filled with the elements of a collection
-
-            //Empty ArrayList
-            //val arrayList = ArrayList<String>()
-            //arrayList.add("one")
-            //arrayList.add("two")
-            //println("print ArrayList")
-            //for (i in arrayList) {
-                //println(i)
-            //}
+    //maps
+    //val daysOfTheWeek = mapOf(1 to "Monday", 2 to "Tuesday", 3 to "Wednesday", 4 to "Thursday", 5 to "Friday", 6 to "Saturday", 7 to "Sunday")   // each key can only exist once also known as hashmaps {referring to the key values}
+    //print(daysOfTheWeek[2])    //result would be to print Tuesday
+    //for(key in daysOfTheWeek.keys)
+    //print("$key is to ${daysOfTheWeek[key]}")   //result will print tuesday
+    //val newDaysOfTheWeek = daysOfTheWeek.toMutableMap()
+    //newDaysOfTheWeek[1] = "Sunday"
+    //newDaysOfTheWeek[2] = "Monday"
+    //newDaysOfTheWeek[3] = "Tuesday"
+    //newDaysOfTheWeek[4] = "Wednesday"
+    //newDaysOfTheWeek[5] = "Thursday"
+    //newDaysOfTheWeek[6] = "Friday"
+    //newDaysOfTheWeek[7] = "Saturday"
+    //print(newDaysOfTheWeek.toSortedMap())
 
 
+    val fruitsMap = mapOf(
+        "favourite" to Fruit(name = "grape", price = 1.0),
+        "ok" to Fruit(name = "Apple", price = 1.5),
+        "2nd Favourite" to Fruit(name = "peach", price = 2.0)
+    )
+    //print(fruitsMap)
+    val newFruitsMap = fruitsMap.toMutableMap()
+//    newFruitsMap[1.toString()] = ("New favourite" to Fruit(name = "Plum", price = 4.0))
+//    newFruitsMap[2.toString()] = ("It'll do" to Fruit(name = "pumpkin", price = 5.5))
+//    newFruitsMap[3.toString()] = ("2nd Favourite" to Fruit(name = "pear", price = 2.0))
+
+    //Arraylist are used to create a dynamic array.
+    //Which means the size of an ArrayList can be increased or decreased according to the requirement
+    //The ArrayList class provides both read and write functionalities
+    //The ArrayList follows the sequence of assertion order
+    //An ArrayList is non synchronised and it may contain duplicate elements
+    //ArrayList<E>(): Is used to create an empty array list
+    //ArrayList(capacity: Int) is used to create an ArrayList of specified capacity
+    //ArrayList(elements: Collection<E>) Is used to create an ArrayList filled with the elements of a collection
+
+    //Empty ArrayList
+    //val arrayList = ArrayList<String>()
+    //arrayList.add("one")
+    //arrayList.add("two")
+    //println("print ArrayList")
+    //for (i in arrayList) {
+    //println(i)
+    //}
 
 
-
-            //Exercise
+    //Exercise
 }
 
 
-            data class Fruit(val name: String, val price:Double)
-            //Exercise
+data class Fruit(val name: String, val price: Double)
+//Exercise
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    //println("Program arguments: ${args.joinToString()}")
+// Try adding program arguments via Run/Debug configuration.
+// Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
+//println("Program arguments: ${args.joinToString()}")
