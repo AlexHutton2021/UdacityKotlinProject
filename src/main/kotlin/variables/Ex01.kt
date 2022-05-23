@@ -1,4 +1,4 @@
-package Variables
+package variables
 
 fun main(args: Array<String>) {
 

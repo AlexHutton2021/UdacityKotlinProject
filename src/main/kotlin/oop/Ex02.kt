@@ -1,4 +1,4 @@
-package OOP
+package oop
 fun main(args: Array<String>) {
 //Control flows allows you do something conditionally
 //and repeatedly run code (conditionally)

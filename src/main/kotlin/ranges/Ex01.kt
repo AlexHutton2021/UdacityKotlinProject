@@ -1,4 +1,4 @@
-package Ranges
+package ranges
 
 fun main(args: Array<String>) {
 

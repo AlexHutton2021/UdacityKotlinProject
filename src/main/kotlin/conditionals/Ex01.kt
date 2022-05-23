@@ -1,4 +1,4 @@
-package `If Else Statements`
+package conditionals
 fun main(args: Array<String>) {
     // If else statements
 
