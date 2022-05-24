@@ -1,13 +1,19 @@
-package Variables
+package variables
 
 fun main(args: Array<String>) {
 
-//variable is a location in memory (storage)
-//To indicate the storage area, each variable should be given a unique (identifier)
+    //variable is a location in memory (storage)
+    //To indicate the storage area, each variable should be given a unique (identifier)
 
 
-//Exercise 1 Create three String variables for trout, haddock, and snapper.
-//Use a String template to print whether you do or don't like to eat these kinds of fish.
+
+    //variable eg
+    var age = 17
+    println(age) //output will be 15
+
+
+    //Exercise 1 Create three String variables for trout, haddock, and snapper.
+    //Use a String template to print whether you do or don't like to eat these kinds of fish.
 
     var trout = "1"
     var haddock = "1"
